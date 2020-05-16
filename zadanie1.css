@@ -1,0 +1,53 @@
+#newHeight {
+    min-width: 150px;
+}
+
+#editor {
+    height: 500px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+#colors {
+    grid-template-columns: auto auto auto auto auto;
+}
+
+#shapes {
+    grid-template-columns: auto auto auto auto;
+}
+
+#canvas-div {
+    border-top: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 2px;
+    background-color: gainsboro;
+    padding: 2px;
+}
+
+.grid-container-canvas {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: auto;
+    grid-template-rows: fit-content(90%);
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+}
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.canvas-item {
+      grid-column: 1 / span 5;
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./zadanie1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Zadanie 1</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="collapse navbar-collapse justify-content-center">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="./zadanie1.html">Zadanie 1</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="./zadanie2.html">Zadanie 2</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+    <div>
+        <hr>
+        <h3>1. Edytor graficzny</h3>
+        <hr>
+        Wykorzytsując canvas2d napisać prosty edytor graficzny:
+        <ul>
+            <li>osadzany na stronie za pomoca znacznika div o zadanym rozmiarze (rozmiar może być różny)</li>
+            <li>z menu z opcjami</li>
+            <li>pozwaljacy na rysowanie prostych kształtów: prostokątów, prostokątów z wypełniniem, kół, okregów</li>
+            <li>w zadanym (wybranym kolorze)</li>
+        </ul>
+        <hr>
+        <input id="newHeight" placeholder="height [px]" type="number" min="400"/>
+        <button id="setSize" >Set size</button>
+        <hr>
+    </div>
+
+
+    <div id="editor">
+        <div id="colors" class="grid-container">
+            <div id="03588C" style="background-color: #03588C" class="grid-item"></div>
+            <div id="049DBF" style="background-color: #049DBF" class="grid-item"></div>
+            <div id="F2B705" style="background-color: #F2B705" class="grid-item"></div>  
+            <div id="F2811D" style="background-color: #F2811D" class="grid-item"></div>
+            <div id="D95204" style="background-color: #D95204" class="grid-item"></div>
+          </div>
+          <div id="shapes" class="grid-container">
+            <div id="rect" class="grid-item shape-item">Rectangle</div>  
+            <div id="fillRect" class="grid-item shape-item">Filled rectangle</div>
+            <div id="circle" class="grid-item shape-item">Circle</div>
+            <div id="disc" class="grid-item shape-item">Disc</div>  
+          </div>
+          <div id="canvas-div" class="grid-container-canvas">
+            <Canvas></Canvas>
+          </div>
+        </div>
+    </div>
+    
+
+    <script src="./zadanie1.js"></script>
+</body>
+</html>
